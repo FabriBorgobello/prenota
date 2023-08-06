@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node ./dist/index.js",
     "prepare": "husky install",
-    "lint": "eslint --ext .ts ./src"
+    "lint": "eslint --ext .ts ./src --fix"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,12 @@
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "npm run lint"
+    ]
   }
 }
