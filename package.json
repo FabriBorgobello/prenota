@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "build": "tsc",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "prepare": "husky install",
+    "lint": "eslint --ext .ts ./src"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,10 @@
     "typescript": "^5.1.6"
   },
   "devDependencies": {
-    "@types/node-cron": "^3.0.8"
+    "@types/node-cron": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "husky": "^8.0.3"
   }
 }
