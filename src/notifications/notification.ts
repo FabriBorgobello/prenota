@@ -1,5 +1,5 @@
-import { configuration } from "../configuration";
-import notifier from "node-notifier";
+import { configuration } from '../configuration';
+import notifier from 'node-notifier';
 
 export const sendNotification = async () => {
   notifier.notify({

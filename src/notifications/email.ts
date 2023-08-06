@@ -3,12 +3,12 @@
  * @see https://myaccount.google.com/apppasswords
  */
 
-import nodemailer from "nodemailer";
-import { configuration } from "../configuration";
+import nodemailer from 'nodemailer';
+import { configuration } from '../configuration';
 
 export const sendEmail = async () => {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: 'gmail',
     auth: {
       user: configuration.email.sender.address,
       pass: configuration.email.sender.password,
@@ -26,7 +26,7 @@ export const sendEmail = async () => {
     if (error) {
       console.log(error);
     } else {
-      console.log("Email sent: " + info.response);
+      console.log('Email sent: ' + info.response);
     }
   });
 };
