@@ -29,8 +29,9 @@
     "lint-staged": "^13.2.3"
   },
   "lint-staged": {
-    "*.{ts}": [
-      "npm run lint"
+    "*.ts": [
+      "eslint --fix",
+      "git add"
     ]
   }
 }
