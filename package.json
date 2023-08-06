@@ -29,9 +29,6 @@
     "lint-staged": "^13.2.3"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.ts": "eslint --fix"
   }
 }
