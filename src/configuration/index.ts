@@ -1,5 +1,5 @@
 import config from "config";
-import { configSchema } from "./env.schema";
+import { configSchema } from "./configuration.schema";
 
 const parsedConfig = configSchema.safeParse(config);
 
