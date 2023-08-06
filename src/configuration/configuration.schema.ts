@@ -1,12 +1,26 @@
 import { z } from "zod";
 
 export const configSchema = z.object({
-  database: z.object({
-    host: z.string(),
-    port: z.number(),
+  email: z.object({
+    message: z.object({
+      subject: z.string(),
+      text: z.string(),
+    }),
+    sender: z.object({
+      name: z.string(),
+      address: z.string().email(),
+      password: z.string(),
+    }),
+    receiver: z.object({
+      address: z.string().email(),
+    }),
   }),
-  secrets: z.object({
-    password: z.string(),
+  telegram: z.object({
+    botToken: z.string(),
+    chatId: z.string(),
   }),
-  // Define other environment variables here...
+  notification: z.object({
+    title: z.string(),
+    message: z.string(),
+  }),
 });
