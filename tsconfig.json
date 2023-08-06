@@ -9,10 +9,7 @@
     "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
     "outDir": "./dist" /* Redirect output structure to the directory. */,
     "rootDir": "./src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
-    "resolveJsonModule": true /* Include modules imported with .json extension. */,
-    "paths": {
-      "@/*": ["*"]
-    } /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "resolveJsonModule": true /* Include modules imported with .json extension. */
   },
   "include": [
     "src/**/*.ts",
