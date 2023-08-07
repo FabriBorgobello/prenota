@@ -23,4 +23,8 @@ export const configSchema = z.object({
     title: z.string(),
     message: z.string(),
   }),
+  prenotaOnline: z.object({
+    url: z.string().url(),
+    cookie: z.string(),
+  }),
 });

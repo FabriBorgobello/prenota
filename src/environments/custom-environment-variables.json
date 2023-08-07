@@ -20,5 +20,9 @@
   "notification": {
     "title": "NOTIFICATION_TITLE",
     "message": "NOTIFICATION_MESSAGE"
+  },
+  "prenotaOnline": {
+    "url": "PRENOTA_ONLINE_URL",
+    "cookie": "PRENOTA_ONLINE_COOKIE"
   }
 }
