@@ -1,4 +1,4 @@
-import { configuration } from 'configuration';
+import { configuration } from '../configuration';
 import { sendEmail } from '../notifications/email';
 import { sendNotification } from '../notifications/notification';
 import { sendTelegram } from '../notifications/telegram';
@@ -7,7 +7,6 @@ export async function prenotaOnlineJob() {
   const URL = configuration.prenotaOnline.url;
 
   try {
-    console.log('Prenota Online Job');
     const myHeaders = new Headers();
     myHeaders.append('Cookie', configuration.prenotaOnline.cookie);
 

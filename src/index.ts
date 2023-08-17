@@ -11,6 +11,6 @@ import { scheduleTask } from './scheduler';
 
 scheduleTask({
   name: 'Prenota Online',
-  interval: '*/5 * * * *',
+  interval: '*/1 * * * *',
   job: prenotaOnlineJob,
 });
