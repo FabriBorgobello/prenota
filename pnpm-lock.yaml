@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       config:
-        specifier: ^3.3.9
-        version: 3.3.12
+        specifier: ^4.4.1
+        version: 4.4.1
       date-fns:
         specifier: ^2.30.0
         version: 2.30.0
@@ -39,9 +39,6 @@ importers:
       '@biomejs/biome':
         specifier: ^2.4.9
         version: 2.4.9
-      '@types/config':
-        specifier: ^3.3.0
-        version: 3.3.5
       '@types/node-cron':
         specifier: ^3.0.8
         version: 3.0.11
@@ -277,9 +274,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@types/config@3.3.5':
-    resolution: {integrity: sha512-itq2HtXQBrNUKwMNZnb9mBRE3T99VYCdl1gjST9rq+9kFaB1iMMGuDeZnP88qid73DnpAMKH9ZolqDpS1Lz7+w==}
-
   '@types/node-cron@3.0.11':
     resolution: {integrity: sha512-0ikrnug3/IyneSHqCBeslAhlK2aBfYek1fGo4bP4QnZPmiqSGRK+Oy7ZMisLWkesffJvQ1cqAcBnJC+8+nxIAg==}
 
@@ -319,9 +313,9 @@ packages:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
-  config@3.3.12:
-    resolution: {integrity: sha512-Vmx389R/QVM3foxqBzXO8t2tUikYZP64Q6vQxGrsMpREeJc/aWRnPRERXWsYzOHAumx/AOoILWe6nU3ZJL+6Sw==}
-    engines: {node: '>= 10.0.0'}
+  config@4.4.1:
+    resolution: {integrity: sha512-XfN4Q4+wBKkGtgMyQ+5ayjepdb0MrdiGKfBr0G1PTLx9rnqsX+Xiw03LEUtSALZU0UVfcFp6+xYV0NL8HLF94g==}
+    engines: {node: '>= 20.0.0'}
 
   date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
@@ -624,8 +618,6 @@ snapshots:
   '@esbuild/win32-x64@0.27.4':
     optional: true
 
-  '@types/config@3.3.5': {}
-
   '@types/node-cron@3.0.11': {}
 
   '@types/node-notifier@8.0.5':
@@ -661,7 +653,7 @@ snapshots:
 
   commander@14.0.3: {}
 
-  config@3.3.12:
+  config@4.4.1:
     dependencies:
       json5: 2.2.3
 
