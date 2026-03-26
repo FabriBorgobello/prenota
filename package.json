@@ -8,8 +8,8 @@
     "build": "tsc",
     "start": "node ./dist/index.js",
     "prepare": "husky install",
-    "lint": "eslint --ext .ts ./src --fix",
-    "format": "prettier . --write"
+    "lint": "biome check --fix ./src",
+    "format": "biome format --write ."
   },
   "keywords": [],
   "author": "",
@@ -26,19 +26,15 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.9",
     "@types/config": "^3.3.0",
     "@types/node-cron": "^3.0.8",
     "@types/node-notifier": "^8.0.2",
     "@types/nodemailer": "^6.4.9",
-    "@typescript-eslint/eslint-plugin": "^6.2.1",
-    "@typescript-eslint/parser": "^6.2.1",
-    "eslint": "^8.46.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "3.0.1"
+    "lint-staged": "^13.2.3"
   },
   "lint-staged": {
-    "*.ts": "eslint --fix",
-    "*.json": "prettier --write"
+    "*.{ts,json}": "biome check --fix --no-errors-on-unmatched"
   }
 }
