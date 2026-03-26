@@ -5,7 +5,7 @@ process.env['NODE_CONFIG_DIR'] = __dirname + '/environments';
 // Accept environment variables from .env file
 import dotenv from 'dotenv';
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 import { prenotaOnlineJob } from './jobs/prenota_online.job';
 import { scheduleTask } from './scheduler';
