@@ -35,8 +35,8 @@ export async function prenotaOnlineJob() {
       } else {
         // Unknown redirection URL
         // TODO: It may get here if there's an appointment available. Check it.
-        console.log('Unknown redirection URL: ' + redirectionUrl);
-        throw new Error('Unknown redirection URL: ' + redirectionUrl);
+        console.log(`Unknown redirection URL: ${redirectionUrl}`);
+        throw new Error(`Unknown redirection URL: ${redirectionUrl}`);
       }
     } else {
       console.log('Appointment available');

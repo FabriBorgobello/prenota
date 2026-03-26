@@ -8,11 +8,11 @@ export const configSchema = z.object({
     }),
     sender: z.object({
       name: z.string(),
-      address: z.string().email(),
+      address: z.email(),
       password: z.string(),
     }),
     receiver: z.object({
-      address: z.string().email(),
+      address: z.email(),
     }),
   }),
   telegram: z.object({
@@ -24,7 +24,7 @@ export const configSchema = z.object({
     message: z.string(),
   }),
   prenotaOnline: z.object({
-    url: z.string().url(),
+    url: z.url(),
     cookie: z.string(),
   }),
 });
